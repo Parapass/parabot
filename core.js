@@ -1,7 +1,6 @@
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = 'CLIENT_SECRET';
 const PREFIX = "-"
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -89,4 +88,4 @@ client.on('guildMemberRemove', member => {
         leavingEmbed.setThumbnail('https://cdn.discordapp.com/emojis/727552232446230578.png?v=1')
     channel.send(leavingEmbed);
 });
-client.login(token)
+client.login(process.env.BOT_TOKEN)
