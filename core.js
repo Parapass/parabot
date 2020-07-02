@@ -24,6 +24,14 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-ping`) {
+        let ping = m.createdTimestamp - message.createdTimestamp
+        const GuitarTime = client.emojis.cache.find(emoji => emoji.name === "GuitarTime");
+        msg.channel.send(`${ping}`)
+    }
+    client.off
+})
+client.on('message', msg=>{
   if (msg.content === `-ninja`) {
       const Sadge = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
       msg.channel.send(`${Sadge}`)
