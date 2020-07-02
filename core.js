@@ -26,8 +26,7 @@ client.on('message', msg=>{
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
         let ping = message.createdTimestamp - message.createdTimestamp
-        const GuitarTime = client.emojis.cache.find(emoji => emoji.name === "GuitarTime");
-        msg.channel.send(`${ping}`)
+        msg.channel.send(`Ping: ${ping}`)
     }
     client.off
 })
