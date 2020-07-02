@@ -20,8 +20,8 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
-        let ping = msg.createdTimestamp - msg.createdTimestamp
-        msg.channel.send(`Ping: ${ping}`)
+        const ping = msg.createdTimestamp - message.createdTimestamp;
+        msg.edit(`Ping: ${ping}`)
     }
     client.off
 })
