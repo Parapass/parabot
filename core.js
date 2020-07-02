@@ -20,8 +20,15 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
+        const msg = await message.channel.send('Pinging Heroku servers..')
         const ping = msg.createdTimestamp - message.createdTimestamp;
         msg.edit(`Ping: ${ping}`)
+    }
+    client.off
+})
+client.on('message', msg=>{
+    if (msg.content === `-uptime`) {
+        msg.channel.send(`Bot uptime is currently \'${ms(this.client.uptime, { long: true }}}\'`)
     }
     client.off
 })
