@@ -26,6 +26,13 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-pepela`) {
+        const PepeLa = client.emojis.cache.find(emoji => emoji.name === "PepeLa");
+        msg.channel.send(`${PepeLa}`)
+    }
+    client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-ping`) {
         msg.channel.send(`You can view the ping of the bot here: https://ping.parapass.tk`)
     }
