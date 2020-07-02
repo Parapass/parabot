@@ -19,6 +19,13 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-sadge`) {
+        const FeelsTrappedMan = client.emojis.cache.find(emoji => emoji.name === "FeelsTrappedMan");
+        msg.channel.send(`${FeelsTrappedMan} please let me out`)
+    }
+    client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-ping`) {
         msg.channel.send(`You can view the ping of the bot here: https://ping.parapass.tk`)
     }
