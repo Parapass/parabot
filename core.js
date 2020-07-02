@@ -1,7 +1,7 @@
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = 'NzI3NTUzNTg0NDQ2NzAxNjMx.XvtiUA.SxwcLExoENreatgawIXdhaWGH8M';
+const token = 'CLIENT_SECRET';
 const PREFIX = "-"
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
