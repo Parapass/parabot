@@ -6,11 +6,6 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
 client.on("message", msg => {
-  if (msg.content === "-ping") {
-    msg.channel.send("Check ping here: <https://www.parapass.tk>")
-  }
-})
-client.on("message", msg => {
     if (msg.content === "-pepega") {
       msg.channel.send("You are the Pepega! :Sadge:")
     }
@@ -25,7 +20,7 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
-        let ping = message.createdTimestamp - message.createdTimestamp
+        let ping = msg.createdTimestamp - msg.createdTimestamp
         msg.channel.send(`Ping: ${ping}`)
     }
     client.off
