@@ -10,6 +10,10 @@ client.on("message", msg => {
       msg.channel.send("You are the Pepega! :Sadge:")
     }
   })
+client.on('ready', () => {
+    console.log(`Logged in as Your Bot`);
+    client.user.setActivity('ping.parapass.tk for ping info').catch(console.error);
+})
 client.on('message', msg=>{
     if (msg.content === `-sadge`) {
         const Sadge = client.emojis.cache.find(emoji => emoji.name === "Sadge");
