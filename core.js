@@ -20,7 +20,7 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
-        const msg = await message.channel.send('Pinging Heroku servers..')
+        const msg = message.channel.send('Pinging Heroku servers..')
         const ping = msg.createdTimestamp - message.createdTimestamp;
         msg.edit(`Ping: ${ping}`)
     }
