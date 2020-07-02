@@ -84,7 +84,7 @@ client.on('guildMemberRemove', member => {
     var leavingEmbed = new Discord.MessageEmbed()
         leavingEmbed.setColor('#0099ff')
         leavingEmbed.setAuthor('PepeLa.')
-        leavingEmbed.setTitle('Farewell, we will miss you!')
+        leavingEmbed.setTitle('Why must you leave, now we do the PepeLa!')
         leavingEmbed.setImage(member.user.displayAvatarURL())
         leavingEmbed.setThumbnail('https://cdn.discordapp.com/emojis/727552232446230578.png?v=1')
     channel.send(leavingEmbed);
