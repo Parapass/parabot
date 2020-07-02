@@ -27,12 +27,6 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-uptime`) {
-        msg.channel.send(`Bot uptime is currently \'${ms(this.client.uptime, { long: true }}}\'`)
-    }
-    client.off
-})
-client.on('message', msg=>{
   if (msg.content === `-ninja`) {
       const Sadge = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
       msg.channel.send(`${Sadge}`)
