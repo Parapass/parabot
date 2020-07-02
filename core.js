@@ -20,9 +20,7 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-ping`) {
-        const msg = message.channel.send('Pinging Heroku servers..')
-        const ping = msg.createdTimestamp - message.createdTimestamp;
-        msg.edit(`Ping: ${ping}`)
+        msg.channel.send(`You can view the ping of the bot here: https://ping.parapass.tk`)
     }
     client.off
 })
