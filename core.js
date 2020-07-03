@@ -25,7 +25,7 @@ client.on('message', msg=>{
 client.on('message', msg=>{
     if (msg.content === `-feelstrappedman`) {
         const FeelsTrappedMan = client.emojis.cache.find(emoji => emoji.name === "FeelsTrappedMan");
-        msg.channel.send(`${FeelsTrappedMan} please let me out`)
+        msg.channel.send(`${FeelsTrappedMan}`)
     }
     client.off
 })
