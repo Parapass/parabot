@@ -46,6 +46,10 @@ client.on('message', msg=>{
         // Set the member's roles to a single role
        var role= member.guild.roles.cache.find(role => role.name === "Youtube Pings");
        member.roles.add(role);
+      console.log('Added role successfully.')
+      msg.channel.send('Added role successfully.')
+    }
+  client.off
 })
 client.on('message', msg=>{
     if (msg.content === `-pepela`) {
