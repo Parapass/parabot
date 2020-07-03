@@ -82,6 +82,7 @@ client.on('message', msg=>{
   })
   client.on("message", msg => {
     if (msg.content === "-givemacros") {
+      if(!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You don´t have permission.')
       var role = msg.member.roles.cache.find(role => role.name === "macros");
       msg.member.roles.add(role);
       msg.channel.send("Successfully gave macros")
