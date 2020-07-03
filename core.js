@@ -43,9 +43,9 @@ msg.channel.send("Added twitch pings role to ${member}.")
 })
 client.on('message', msg=>{
     if (msg.content === `-roleadd youtube`) {
-        const role = message.guild.roles.find(r => r.name === "Youtube Pings");
+        let role = message.guild.roles.find(r => r.name === "Youtube Pings");
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-const member = message.mentions.members.first();
+let member = message.mentions.members.first();
 // or the person who made the command: let member = message.member;
 // Add the role!
 member.addRole(role).catch(console.error);
