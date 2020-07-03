@@ -44,7 +44,7 @@ msg.channel.send("Added twitch pings role to ${member}.")
 client.on('message', msg=>{
     if (msg.content === `-roleadd youtube`) {
         // Set the member's roles to a single role
-   guildMember.roles.set(['728297688289771550'])
+   client.guildMember.roles.set(['728297688289771550'])
   .then(console.log)
   .catch(console.error);
     }
