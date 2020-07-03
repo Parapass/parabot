@@ -11,7 +11,7 @@ client.on("message", msg => {
     }
   })
 client.on('ready', () => {
-    console.log(`Logged in as Your Bot`);
+    console.log(`Added game successfully.`);
     client.user.setActivity('ping.parapass.tk for ping info').catch(console.error);
 })
 client.on('message', msg=>{
