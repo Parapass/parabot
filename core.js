@@ -45,7 +45,7 @@ client.on('message', msg=>{
     if (msg.content === `-roleadd youtube`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
-       member.roles.add(role);
+       msg.member.roles.add(role);
       console.log('Added role successfully.')
       msg.channel.send('Added role successfully.')
     }
