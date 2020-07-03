@@ -35,7 +35,7 @@ client.on('message', msg=>{
        var role= msg.member.guild.roles.cache.find(role => role.name === "Twitch Pings");
        msg.member.roles.add(role);
       console.log('Added twitch role successfully.')
-      msg.channel.send('Added ${role} role successfully.')
+      msg.channel.send('Added Twitch Pings role successfully.')
     }
   client.off
 })
@@ -45,7 +45,7 @@ client.on('message', msg=>{
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
        msg.member.roles.add(role);
       console.log('Added youtube role successfully.')
-      msg.channel.send('Added ${role} role successfully.')
+      msg.channel.send('Added Youtube Pings role successfully.')
     }
   client.off
 })
