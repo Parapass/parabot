@@ -33,7 +33,7 @@ client.on('message', msg=>{
     if (msg.content === `-uptime`) {
         module.exports = class extends Command {
           async run(message) {
-            msg.channel.send('My uptime is \'${ms(this.client.uptime, { long: true }}}\');
+            msg.channel.send('My uptime is ${client.uptime}');
     }
     client.off
 })
