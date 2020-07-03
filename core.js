@@ -41,6 +41,17 @@ member.addRole(role).catch(console.error);
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-roleadd youtube`) {
+        const role = message.guild.roles.find(r => r.name === "Youtube Pings");
+// Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
+const member = message.mentions.members.first();
+// or the person who made the command: let member = message.member;
+// Add the role!
+member.addRole(role).catch(console.error);
+    }
+    client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-pepela`) {
         const PepeLa = client.emojis.cache.find(emoji => emoji.name === "PepeLa");
         msg.channel.send(`${PepeLa}`)
