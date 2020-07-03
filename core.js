@@ -37,6 +37,7 @@ const member = message.mentions.members.first();
 // or the person who made the command: let member = message.member;
 // Add the role!
 member.addRole(role).catch(console.error);
+msg.channel.send("Added twitch pings role to ${member}.")
     }
     client.off
 })
@@ -48,6 +49,7 @@ const member = message.mentions.members.first();
 // or the person who made the command: let member = message.member;
 // Add the role!
 member.addRole(role).catch(console.error);
+msg.channel.send("Added youtube pings role to ${member}.")
     }
     client.off
 })
