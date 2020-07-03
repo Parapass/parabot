@@ -31,15 +31,13 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-roleadd twitch`) {
-        const role = message.guild.roles.find(r => r.name === "Twitch Pings");
-// Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-const member = message.member;
-// or the person who made the command: let member = message.member;
-// Add the role!
-member.addRole(role).catch(console.error);
-msg.channel.send("Added twitch pings role to ${member}.")
+        // Set the member's roles to a single role
+       var role= msg.member.guild.roles.cache.find(role => role.name === "Twitch Pings");
+       msg.member.roles.add(role);
+      console.log('Added role successfully.')
+      msg.channel.send('Added role successfully.')
     }
-    client.off
+  client.off
 })
 client.on('message', msg=>{
     if (msg.content === `-roleadd youtube`) {
