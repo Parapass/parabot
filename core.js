@@ -12,7 +12,7 @@ client.on("message", msg => {
   })
 client.on('ready', () => {
     console.log(`Added game successfully.`);
-    client.user.setActivity('twitch.tv/parapass3d').catch(console.error);
+    client.user.setActivity('Add me to your server on https://parapass.tk').catch(console.error);
 })
 client.on('message', msg=>{
     if (msg.content === `-sadge`) {
