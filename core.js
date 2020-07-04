@@ -30,13 +30,6 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-uptime`) {
-        module.exports = class extends Command {
-          async run(message) {
-            msg.channel.send('My uptime is ${client.uptime}');
-    }
-})
-client.on('message', msg=>{
     if (msg.content === `-roleadd twitch`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Twitch Pings");
