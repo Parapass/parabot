@@ -132,6 +132,18 @@ client.on('message', msg=>{
     client.off
     }
 })
+client.on('messageReactionAdd', async (reaction, user) => {
+  //Filter the reaction
+  if (reaction.id === "one") {
+    // Define the emoji user add
+    let role = msg.guild.roles.cache.find(role => role.name === 'Alerts');
+    if (msg.channel.name !== 'alerts') {
+      msg.reply(':x: You must go to the channel #reaction-roles');
+    } else {
+      msg.member.addRole(role.id);
+    }
+  }
+});
 //on leaving message
 client.on('guildMemberRemove', member => {
 
