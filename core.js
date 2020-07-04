@@ -35,7 +35,6 @@ client.on('message', msg=>{
           async run(message) {
             msg.channel.send('My uptime is ${client.uptime}');
     }
-    client.off
 })
 client.on('message', msg=>{
     if (msg.content === `-roleadd twitch`) {
