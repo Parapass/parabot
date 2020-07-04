@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const PREFIX = "-"
 const ReactionRole = require("reaction-role");
-const reactionRole = new ReactionRole("TOKEN");
+const reactionRole = new ReactionRole("BOT_TOKEN");
 reactionRole.init();
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
