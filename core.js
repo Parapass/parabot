@@ -2,6 +2,9 @@ const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const PREFIX = "-"
+const ReactionRole = require("reaction-role");
+const reactionRole = new ReactionRole("TOKEN");
+reactionRole.init();
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
@@ -53,6 +56,15 @@ client.on('message', msg=>{
     if (msg.content === `-pepela`) {
         const PepeLa = client.emojis.cache.find(emoji => emoji.name === "PepeLa");
         msg.channel.send(`${PepeLa}`)
+    }
+    client.off
+})
+client.on('message', msg=>{
+    if (msg.content === `-reactions`) {
+        let option1 = reactionRole.createOption("✅", "606046163564494859", "604212225493696512");
+        let option2 = reactionRole.createOption("spotify:598532266515496970", "604212225493696512", "606046163564494859");
+        reactionRole.createMessage("678345974460186651", "675657998907211787", true, option1, option2);
+        reactionRole.init();
     }
     client.off
 })
