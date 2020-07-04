@@ -60,6 +60,12 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-rickroll`) {
+        msg.channel.send(`Wanna get free wifi WITHOUT paying for internet? Go here to learn more: <https://www.youtube.com/watch?v=dQw4w9WgXcQ>`)
+    }
+    client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-reactions`) {
         let option1 = reactionRole.createOption("✅", "606046163564494859", "604212225493696512");
         let option2 = reactionRole.createOption("spotify:598532266515496970", "604212225493696512", "606046163564494859");
