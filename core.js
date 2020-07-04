@@ -61,7 +61,7 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-rickroll`) {
-        msg.channel.send(`Wanna get free wifi WITHOUT paying for internet? Go here to learn more: <https://www.youtube.com/watch?v=dQw4w9WgXcQ>`)
+        msg.channel.send(`Wanna get free wifi WITHOUT paying for internet? Go here to learn more: <https://www.parapass.tk>`)
     }
     client.off
 })
