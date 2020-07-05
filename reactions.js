@@ -1,4 +1,4 @@
-const { Client, RichEmbed } = require('discord.js');
+const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -16,7 +16,7 @@ client.on('message', message => {
     
   if(message.content.toLowerCase() === '-roles')
   {
-      const embed = new RichEmbed();
+      const embed = new MessageEmbed();
       embed.setTitle('Server Roles')
       embed.setColor('BLUE')
       message.channel.send(embed);
