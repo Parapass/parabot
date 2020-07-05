@@ -1,6 +1,7 @@
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const reactions = require('./reactions.js');
 const PREFIX = "-"
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
