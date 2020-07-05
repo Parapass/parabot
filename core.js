@@ -143,7 +143,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
 //on leaving message
 client.on('guildMemberRemove', member => {
 
-    const channel = member.guild.channels.cache.find(channel => channel.name === "general");
+    const channel = member.guild.channels.cache.find(channel => channel.name === "new-peeps");
     if(!channel) return;
 
     channel.send(`**${member}** has just left the server.. Bye Bye`);
