@@ -12,7 +12,7 @@ client.on('message', message => {
   if(message.author.bot)
   {
       const embedMsg = message.embeds.find(msg => msg.title === 'Server Roles');
-      if(embedMsh)
+      if(embedMsg)
       {
           embedMsg.message.react('one')
           then(reaction => reaction.message.react('two'))
