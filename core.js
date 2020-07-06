@@ -5,6 +5,9 @@ const reactions = require('./reactions.js');
 const PREFIX = "-"
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
+  console.log('"Bot is running with "+client.users.size+
+" users, in  "+client.channels.size+
+" channels of "+client.guilds.size+" guilds! 👍')
 })
 client.on("message", msg => {
     if (msg.content === "-pepega") {
