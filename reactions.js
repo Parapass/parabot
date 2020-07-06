@@ -15,12 +15,11 @@ client.on('message', message => {
       if(embedMsg)
       {
           embedMsg.message.react('one')
-          then(reaction => reaction.message.react('two'))
-          then(reaction => reaction.message.react('three'))
-          then(reaction => reaction.message.react('four'))
-          then(reaction => reaction.message.react('five'))
+          then(reaction => message.react('two'))
+          then(reaction => message.react('three'))
+          then(reaction => message.react('four'))
+          then(reaction => message.react('five'))
           then(reaction => console.log("Reacted with " + reaction.emoji.name))
-          then(reaction => reaction.message.react('two'))
           .catch(err => console.error);
       }
     return;
