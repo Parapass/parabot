@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('message', message => {
   if(message.author.bot)
   {
-      const embedMsh = message.embeds.find(msg => msg.title === 'Server Roles');
+      const embedMsg = message.embeds.find(msg => msg.title === 'Server Roles');
       if(embedMsh)
       {
           embedMsg.message.react('one')
