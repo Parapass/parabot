@@ -11,14 +11,31 @@ client.on('ready', () => {
 client.on('message', message => {
   if(message.author.bot)
   {
+      const embedMsh = message.embeds.find(msg => msg.title === 'Server Roles');
+      if(embedMsh)
+      {
+          embedMsg.message.react('one')
+          then(reaction => reaction.message.react('two'))
+          then(reaction => reaction.message.react('three'))
+          then(reaction => reaction.message.react('four'))
+          then(reaction => reaction.message.react('five'))
+          then(reaction => console.log("Reacted with " + reaction.emoji.name))
+          then(reaction => reaction.message.react('two'))
+          .catch(err => console.error);
+      }
     return;
   }
     
   if(message.content.toLowerCase() === '-roles')
   {
       const embed = new MessageEmbed();
-      embed.setTitle('Server Roles')
-      embed.setColor('BLUE')
+      embed.setTitle('Server Roles');
+      embed.setColor('BLUE');
+      embed.setDescription(":one: - 100-1 Rank\n" +
+      ":two: - 500-101 Rank\n" +
+      ":three: - 1000-501 Rank\n" +
+      ":four: - 3000-1001 Rank\n" +
+      ":five: - 5000-3001 Rank\n");
       message.channel.send(embed);
   }
 });
