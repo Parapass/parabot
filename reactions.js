@@ -14,7 +14,7 @@ client.on('message', message => {
       const embedMsg = message.embeds.find(msg => msg.title === 'Server Roles');
       if(embedMsg)
       {
-          embedMsg.message.react('one')
+          message.react('one')
           then(reaction => message.react('two'))
           then(reaction => message.react('three'))
           then(reaction => message.react('four'))
