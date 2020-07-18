@@ -64,6 +64,12 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-patreon`) {
+        msg.channel.send(`https://patreon.com/parapass`)
+    }
+    client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-reactions`) {
         msg.channel.send("Not set up yet. <@617736281249677462> set it up now.")
         
