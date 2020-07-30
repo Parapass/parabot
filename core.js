@@ -8,7 +8,8 @@ client.on("ready", () => {
 })
 client.on("message", msg => {
     if (msg.content === "-pepega") {
-      msg.channel.send("You are the Pepega! :Sadge:")
+      const Sadge = client.emojis.cache.find(emoji => emoji.name === "Sadge");
+      msg.channel.send('You are the Pepega! ${Sadge}')
     }
   })
 client.on('ready', () => {
