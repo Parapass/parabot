@@ -12,6 +12,12 @@ client.on("message", msg => {
       msg.channel.send(`You are the Pepega! ${Sadge}`)
     }
   })
+client.on("message", msg => {
+    if (msg.content === "-pepege") {
+      const Pepege = client.emojis.cache.find(emoji => emoji.name === "Pepege");
+      msg.channel.send(`${Pepege} Next slide please`)
+    }
+  })
 client.on('ready', () => {
     console.log(`Added game successfully.`);
     client.user.setActivity('Add me to your server on https://parapass.tk').catch(console.error);
