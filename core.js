@@ -58,6 +58,16 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-roleadd tiktok`) {
+        // Set the member's roles to a single role
+       var role= msg.member.guild.roles.cache.find(role => role.name === "TikTok Pings");
+       msg.member.roles.add(role);
+      console.log('Added TikTok role successfully.')
+      msg.channel.send('Added TikTok Pings role successfully.')
+    }
+  client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-pepela`) {
         const PepeLa = client.emojis.cache.find(emoji => emoji.name === "PepeLa");
         msg.channel.send(`${PepeLa}`)
