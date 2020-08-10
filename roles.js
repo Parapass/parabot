@@ -18,7 +18,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-rolermd youtube`) {
+    if (msg.content === `-rolerm youtube`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
        msg.member.roles.remove(role);
