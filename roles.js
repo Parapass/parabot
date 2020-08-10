@@ -1,6 +1,9 @@
 const { Client, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+client.on("ready", () => {
+  console.log('Roles init')
+})
 client.on('message', msg=>{
     if (msg.content === `-rolerm twitch`) {
         // Set the member's roles to a single role
