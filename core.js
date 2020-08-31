@@ -49,6 +49,16 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-roleadd models`) {
+        // Set the member's roles to a single role
+       var role= msg.member.guild.roles.cache.find(role => role.name === "Model Pings");
+       msg.member.roles.add(role);
+      console.log('Added model role successfully.')
+      msg.channel.send('Added Model Pings role successfully.')
+    }
+  client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-roleadd youtube`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
