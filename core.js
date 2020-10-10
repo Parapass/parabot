@@ -49,6 +49,16 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-roleadd twitch`) {
+        // Set the member's roles to a single role
+       var role= msg.member.guild.roles.cache.find(role => role.name === "among us");
+       msg.member.roles.add(role);
+      console.log('Added among us role successfully.')
+      msg.channel.send('Added among us role successfully.')
+    }
+  client.off
+})
+client.on('message', msg=>{
     if (msg.content === `-roleadd models`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Model Pings");
