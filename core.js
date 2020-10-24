@@ -49,7 +49,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-roleadd twitch`) {
+    if (msg.content === `-roleadd among`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "among us");
        msg.member.roles.add(role);
