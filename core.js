@@ -121,6 +121,13 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-catgirl`) {
+        msg.channel.send(`https://media.discordapp.net/attachments/709450587850276946/727765054665261126/Cat_Girl.gif`)
+        msg.channel.send(`https://media.discordapp.net/attachments/709450587850276946/727765055046942770/caption-13.gif`)
+    }
+    client.off
+})
+client.on('message', msg=>{
   if (msg.content === `-ninja`) {
       const Sadge = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
       msg.channel.send(`${Sadge}`)
