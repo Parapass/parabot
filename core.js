@@ -128,6 +128,12 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
+    if (msg.content === `-cce`) {
+        msg.channel.send(`https://tenor.com/view/cocacolaespuma-boom-gif-18865245`)
+    }
+    client.off
+})
+client.on('message', msg=>{
   if (msg.content === `-ninja`) {
       const Sadge = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
       msg.channel.send(`${Sadge}`)
