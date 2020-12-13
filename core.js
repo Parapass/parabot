@@ -19,6 +19,12 @@ client.on("message", msg => {
       msg.channel.send(`${Pepege} Next slide please`)
     }
   })
+client.on("message", msg => {
+    if (msg.content === "-servers") {
+      const size = client.users.size;
+      msg.channel.send(`Current server size: ${size}`)
+    }
+  })
 client.on('ready', () => {
     console.log(`Added game successfully.`);
     client.user.setActivity('Add me to your server on https://parapass.xyz').catch(console.error);
@@ -102,15 +108,14 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-patreon`) {
-        msg.channel.send(`https://patreon.com/parapass`)
+    if (msg.content === `-kofi`) {
+        msg.channel.send(`https://ko-fi.com/parapass`)
     }
     client.off
 })
 client.on('message', msg=>{
     if (msg.content === `-reactions`) {
         msg.channel.send("Not set up yet. <@617736281249677462> set it up now.")
-        
     }
     client.off
 })
@@ -129,7 +134,7 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `-cce`) {
-        msg.channel.send(`https://tenor.com/view/cocacolaespuma-boom-gif-18865245`)
+        msg.channel.send(`Want to join Team CCE? Simply join our discord and add our clan name to your ScoreSaber profile! https://discord.gg/t5EM9Hx4wH`)
     }
     client.off
 })
