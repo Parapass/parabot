@@ -21,7 +21,7 @@ client.on("message", msg => {
   })
 client.on("message", msg => {
     if (msg.content === "-servers") {
-      const size = client.users.size;
+      const size = client.guilds.cache.size;
       msg.channel.send(`Current server size: ${size}`)
     }
   })
