@@ -133,20 +133,14 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-cce`) {
-        msg.channel.send(`Want to join Team CCE? Simply join our discord and add our clan name to your ScoreSaber profile! https://discord.gg/t5EM9Hx4wH`)
-    }
-    client.off
-})
-client.on('message', msg=>{
   if (msg.content === `-ninja`) {
-      const Sadge = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
-      msg.channel.send(`${Sadge}`)
+      const Ninja = client.emojis.cache.find(emoji => emoji.name === "NinjaPls");
+      msg.channel.send(`${Ninja}`)
   }
   client.off
 })
 client.on('message', msg=>{
-  if (msg.content === `-wifianywhere`) {
+  if (msg.content === `-wifi`) {
       msg.channel.send(`https://cdn.discordapp.com/attachments/727543737382862872/728059359841484880/4D17760FE51201749800044331008_391f3cbca13.2.1.1384188102729898160.mp4`)
   }
   client.off
@@ -154,6 +148,12 @@ client.on('message', msg=>{
   client.on("message", msg => {
     if (msg.content === "Ding ding pch n daa, bam-ba-ba-re-bam baram bom bom baba-bam-bam-bommm") {
       msg.channel.send("Wh-wha-what's going on-on? https://www.youtube.com/watch?v=k85mRPqvMbE")
+    }
+  })
+  client.on("message", msg => {
+    if (msg.content === "among us") {
+      const AmongUs = client.emojis.cache.find(emoji => emoji.name === "AmongUsDance");
+      msg.channel.send("${Ninja} https://www.youtube.com/watch?v=qfGqxaY6k_U")
     }
   })
   client.on("message", msg => {
