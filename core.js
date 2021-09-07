@@ -53,7 +53,7 @@ client.on('message', msg=> {
         msg.channel.send('Added Twitch Pings role successfully.')
     }
     client.off
-}}
+})
 client.on('message', msg=>{
     if (msg.content === `/rolea youtube`) {
         // Set the member's roles to a single role
