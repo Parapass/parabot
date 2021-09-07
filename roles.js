@@ -8,7 +8,7 @@ client.on("ready", () => {
   console.log('Roles init')
 })
 client.on('message', msg=>{
-    if (msg.content === `-rolerm twitch`) {
+    if (msg.content === `-roler twitch`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Twitch Pings");
        msg.member.roles.remove(role);
@@ -18,7 +18,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-rolerm youtube`) {
+    if (msg.content === `-roler youtube`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
        msg.member.roles.remove(role);
@@ -28,7 +28,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `-rolerm tiktok`) {
+    if (msg.content === `-roler tiktok`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "TikTok Pings");
        msg.member.roles.remove(role);

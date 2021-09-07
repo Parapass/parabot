@@ -45,7 +45,7 @@ client.on('message', msg=>{
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/roleadd twitch`) {
+    if (msg.content === `/rolea twitch`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Twitch Pings");
        msg.member.roles.add(role);
@@ -55,7 +55,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/roleadd among`) {
+    if (msg.content === `/rolea among`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "among us");
        msg.member.roles.add(role);
@@ -65,7 +65,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/roleadd models`) {
+    if (msg.content === `/rolea models`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Model Pings");
        msg.member.roles.add(role);
@@ -75,7 +75,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/roleadd youtube`) {
+    if (msg.content === `/rolea youtube`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "Youtube Pings");
        msg.member.roles.add(role);
@@ -85,7 +85,7 @@ client.on('message', msg=>{
   client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/roleadd tiktok`) {
+    if (msg.content === `/rolea tiktok`) {
         // Set the member's roles to a single role
        var role= msg.member.guild.roles.cache.find(role => role.name === "TikTok Pings");
        msg.member.roles.add(role);
@@ -103,19 +103,19 @@ client.on('message', msg=>{
 })
 client.on('message', msg=>{
     if (msg.content === `/rickroll`) {
-        msg.channel.send(`Wanna get free wifi WITHOUT paying for internet? Go here to learn more: <https://www.parapass.tk>`)
+        msg.channel.send(`Wanna get free wifi WITHOUT paying for internet? Go here to learn more: <https://impostor.tech/>`)
     }
     client.off
 })
 client.on('message', msg=>{
-    if (msg.content === `/kofi`) {
-        msg.channel.send(`https://ko-fi.com/parapass`)
+    if (msg.content === `/donate`) {
+        msg.channel.send(`https://parapass.me`)
     }
     client.off
 })
 client.on('message', msg=>{
     if (msg.content === `/ping`) {
-        msg.channel.send(`i forgor`)
+        msg.channel.send(`i forgor 💀`)
     }
     client.off
 })
