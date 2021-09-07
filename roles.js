@@ -27,13 +27,3 @@ client.on('message', msg=>{
     }
   client.off
 })
-client.on('message', msg=>{
-    if (msg.content === `-roler tiktok`) {
-        // Set the member's roles to a single role
-       var role= msg.member.guild.roles.cache.find(role => role.name === "TikTok Pings");
-       msg.member.roles.remove(role);
-      console.log('Removed TikTok role successfully.')
-      msg.channel.send('Removed TikTok Pings role successfully.')
-    }
-  client.off
-})
