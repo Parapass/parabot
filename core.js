@@ -27,7 +27,7 @@ client.on("message", msg => {
   })
 client.on('ready', () => {
     console.log(`Added game successfully.`);
-    client.user.setActivity('Add me to your server on https://parapass.xyz').catch(console.error);
+    client.user.setActivity('This bot will die on November 28th, 2022.').catch(console.error);
 })
 client.on('message', msg=>{
     if (msg.content === `/sadge`) {
